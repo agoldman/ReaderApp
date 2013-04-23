@@ -1,0 +1,18 @@
+<h1>Welcome to Your Feeds!</h1>
+<div class="sidebar" style="float: left"></div>
+<div class="content" style="float: left"></div>
+
+<script>
+$(function(){
+
+  var feedData = <%= @feeds.to_json.html_safe %>;
+
+  var fd = FD.initialize(
+    $(".sidebar"),
+    $(".content"),
+    feedData
+  );
+
+});
+
+</script>
