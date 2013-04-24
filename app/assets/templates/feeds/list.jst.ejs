@@ -1,7 +1,7 @@
 <ul>
   <% feeds.each(function(feed) {%>
     <li>
-      <a href="#/feeds/<%= feed.escape('id') %>">
+      <a href="#/feeds/<%= feed.escape('id') %>/entries">
         <%= feed.escape('title') %>
       </a>
     </li>

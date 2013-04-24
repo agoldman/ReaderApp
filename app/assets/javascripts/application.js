@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require backbone-rails
+//= require backbone-relational
 //= require fd
 //= require_tree ./models
 //= require_tree ./collections

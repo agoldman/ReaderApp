@@ -6,7 +6,7 @@ class FeedsController < ApplicationController
   def index
     @feeds = Feed.all
     respond_to do |format|
-      format.json { render json: @feeds }
+      format.json { render json: @feeds}
       format.html { render :index }
     end
   end
